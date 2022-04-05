@@ -1,0 +1,27 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+.pokemon-text {
+    font-family: 'Pokemon Solid', sans-serif;
+    color:  #FFCC00;
+    text-shadow:
+        -2px -2px 0 #0A285F,
+        0   -2px 0 #0A285F,
+        2px -2px 0 #0A285F,
+        2px  0   0 #0A285F,
+        2px  2px 0 #0A285F,
+        0    2px 0 #0A285F,
+        -2px  2px 0 #0A285F,
+        -2px  0   0 #0A285F;
+}
+
+.pokeball-header {
+    padding: 50px;
+    left: -50px;
+    top: -50px;
+}
+
+.pokeball-container {
+    left: 50%;
+    top: 149.77px;
+    
+}

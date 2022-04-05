@@ -1,0 +1,16 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+#login-header {
+    font-family: 'Pokemon Solid', sans-serif;
+    color:  #FFCC00;
+    text-shadow:
+        -2px -2px 0 #0A285F,
+        0   -2px 0 #0A285F,
+        2px -2px 0 #0A285F,
+        2px  0   0 #0A285F,
+        2px  2px 0 #0A285F,
+        0    2px 0 #0A285F,
+        -2px  2px 0 #0A285F,
+        -2px  0   0 #0A285F;
+}
+                

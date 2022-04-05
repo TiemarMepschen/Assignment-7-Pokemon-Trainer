@@ -1,0 +1,18 @@
+<div class="card d-inline-block m-2" style="width: 210px;">
+    <img class="card-img-top" [src]="pokemon.sprite" onerror="this.onerror=null; this.src='../../assets/images/MissingNo.webp'" alt="pokemon.name">
+    <div class="card-body">
+        <h5 class="card-title">
+            #{{pokemon.id}} {{pokemon.name}}
+            <img *ngIf="pokemon.caught" style="width: 20px; height: 20px;" src="../../assets/images/pokeball.png" alt="pokeball"/>
+        </h5>
+        <div class="d-flex justify-content-center">
+            <ng-container *ngIf="pokemon.caught; then release; else catch"></ng-container>
+            <ng-template #release>
+                <app-release-button [pokemonId]="pokemon.id" class=""></app-release-button>
+            </ng-template>
+            <ng-template #catch>
+                <app-catch-button [pokemonId]="pokemon.id" class=""></app-catch-button>
+            </ng-template>
+        </div>
+    </div>
+</div>

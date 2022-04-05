@@ -1,0 +1,30 @@
+<form #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm)">
+  <section class="vh-100">
+    <div class="container py-5 h-100" style="border-color: red">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong bg-light">
+            <div class="card-body p-5 text-center">
+              <h3 id="login-header" class="mb-5">Login</h3>
+              <div class="form-floating mb-4">
+                <input
+                  type="text"
+                  ngModel
+                  #username="ngModel"
+                  name="username"
+                  id="typeTextX-2"
+                  class="form-control form-control-lg"
+                  placeholder="username"
+                />
+                <label class="form-label" for="typeTextX-2">Username</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mt-4">
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</form>

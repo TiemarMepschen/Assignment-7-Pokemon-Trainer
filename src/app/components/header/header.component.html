@@ -1,0 +1,19 @@
+<header>
+    <div class="bg-danger p-5 border-bottom border-5 border-dark">
+        <nav class="float-end">
+            <button routerLink="/trainer" class="btn btn-primary mx-1">Trainer</button>
+            <button routerLink="/pokemon" class="btn btn-primary mx-1">Pokemon</button>
+        </nav>
+        <ng-container *ngIf="user !== undefined; then userDefined; else noUser"></ng-container>
+        <ng-template #noUser>
+            <h1 class="pokemon-text">Pokémon</h1>
+        </ng-template>
+        <ng-template #userDefined>
+            <h1 class="pokemon-text">{{user!.username}}</h1>
+        </ng-template>
+        <div class="pokeball-container position-absolute">
+            <div class="pokeball-header bg-white border border-5 border-dark rounded-circle position-relative"></div>
+        </div>
+    </div>
+    <div style="padding: 40px;"></div>
+</header>
